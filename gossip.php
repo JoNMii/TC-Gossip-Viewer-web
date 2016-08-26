@@ -1,4 +1,4 @@
-<html><head><link rel="stylesheet" src="gossip.css" />
+<html><head><link rel="stylesheet" href="gossip.css" />
 <script type="text/javascript" src="gossip.js"></script></head><body><?php
 	$type = 0;
 	$entry = 0;
@@ -9,7 +9,8 @@
 		$type = max(0,(int)$_GET['type']);
 	if ($entry && $type)
 	{
-		$db = new PDO('mysql:host=127.0.0.1;dbname=world', 'trinity', 'trinity');
+		require(__DIR__.'/gossip-config.inc.php');
+		$db = new PDO(DATABASE, USERNAME, PASSWORD);
 		
 		function text($text)
 		{
