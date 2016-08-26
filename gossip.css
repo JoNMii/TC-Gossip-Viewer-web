@@ -1,0 +1,109 @@
+#genderbox
+{
+	z-index: 1;
+	background: #ffffff;
+	position: fixed;
+	right: 2px;
+	top: 2px;
+	width: 143px;
+	height: 21px;
+	border: 2px dotted #000000;
+}
+#gender
+{
+	z-index: 2;
+	position: fixed;
+	right: 5px;
+	top: 5px;
+	width: 150px;
+	font-family: Verdana;
+	font-size: 12px;
+	font-style: italic;
+}
+#gender input, #gender label, #gender
+{
+	padding: 0;
+	margin: 0;
+	height: 15px;
+	line-height: 15px;
+	vertical-align: middle;
+	text-align: center;
+}
+#gender input
+{
+	margin-left: 10px;
+}
+
+div.gossipmenu
+{
+	margin: 5px;
+	padding: 2px;
+	position: relative;
+	display: inline-block;
+	border: 1px solid #000000;
+	font-family: Verdana;
+	border-collapse: collapse;
+}
+div.heading-container {
+	width: 100%;
+	border: 1px dashed #000000;
+	border-radius: 10px;
+}
+div.heading
+{
+	padding: 2px 5px;
+	margin-right: 25px;
+	font-size: 14px;
+	max-width: 30vw;
+	white-space: pre-wrap;
+}
+div.menuid
+{
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	width: 30px;
+	text-align: right;
+	font-family: Monospace;
+	font-size: 12px;
+}
+div.maletext, div.femaletext
+{
+	position: relative;
+	padding: 2px 5px;
+	margin-right: 35px;
+	font-size: 12px;
+	max-width: 30vw;
+	white-space: pre-wrap;
+}
+div.femaletext { display: none; }
+body.female div.femaletext { display: block; }
+div.maletext { display: block; }
+body.female div.maletext { display: none; }
+
+div.build
+{
+	display: none;
+}
+div.textid
+{
+	position: absolute;
+	right: -35px;
+	width: 40px;
+	top: 5px;
+	font-family: Monospace;
+	font-size: 12px;
+	text-align: right;
+}
+div.emptychild-container
+{
+	width: 100%;
+	border: 1px dashed #000000;
+	border-radius: 10px;
+}
+div.emptychild
+{
+	font-size: 14px;
+	max-width: 30vw;
+	padding: 2px 5px;
+}
